@@ -1,6 +1,11 @@
 {
   "name": "nextjs-helmet-styled-component",
   "version": "2.0.0",
+  "author": {
+    "name": "Kevin Chou",
+    "email": "kevin@bighuman.com",
+    "url": "https://bighuman.com"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",

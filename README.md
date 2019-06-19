@@ -1,6 +1,6 @@
 [![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-redux-wrapper)
 
-# This is a NEXT js starter with Redux, Helmet, and SASS setup
+# This is a NEXT js starter with Redux, Helmet, and Styled Component setup
 
 ## How to use
 
@@ -8,14 +8,21 @@ List of NEXT examples:
 
 https://github.com/zeit/next.js/tree/canary/examples
 
-This also includes base sass styles to reuse
 
-Install it and run:
+There is a precommit hook that runs all the checks.
+
+Run the commands below to make sure everything passes
+
+ ```bash
+ yarn lint:precommit
+ yarn flow:precommit
+ ```
+
+Install:
+
+This stack uses [flow](https://flow.org/), [glow](https://www.npmjs.com/package/glow), [eslint](https://eslint.org/), and [yarn](https://yarnpkg.com/en/)
 
 ```bash
-npm install
-npm run dev
-# or
 yarn
 yarn dev
 ```
