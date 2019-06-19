@@ -1,3 +1,5 @@
+// @flow
+
 const nextRoutes = require('next-routes');
 
 // eslint-disable-next-line no-multi-assign

@@ -1,35 +1,35 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-redux-wrapper)
+# Big Human NextJS/React Starter Kit
 
-# This is a NEXT js starter with Redux, Helmet, and Styled Component setup
+## General
 
-## How to use
+This stack uses [Flow](https://flow.org/)/[Glow](https://www.npmjs.com/package/glow) for static type checking, [ESLint](https://eslint.org/) for linting rules and standards, [Styled Components](https://github.com/styled-components/styled-components) for component styling and responsive design, [Redux](https://redux.js.org/) for application state management, and [Yarn](https://yarnpkg.com/en/) for dependencies.
 
-List of NEXT examples:
-
-https://github.com/zeit/next.js/tree/canary/examples
-
-
-There is a precommit hook that runs all the checks.
-
-Run the commands below to make sure everything passes
-
- ```bash
- yarn lint:precommit
- yarn flow:precommit
- ```
-
-Install:
-
-This stack uses [flow](https://flow.org/), [glow](https://www.npmjs.com/package/glow), [eslint](https://eslint.org/), and [yarn](https://yarnpkg.com/en/)
+## Development
 
 ```bash
 yarn
-yarn dev
+yarn start
 ```
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
+## Building
 
 ```bash
-now
+yarn
+yarn build
 ```
-This repo is based off several examples from the next.js templates
+
+## Running (Production)
+
+```bash
+yarn
+yarn prod
+```
+
+### Pre-commit Rules
+
+On every commit, yarn will automatically run the below pre-commit hooks. If these checks pass, your commit should be good to be raised as a PR.
+
+```bash
+ yarn lint:precommit
+ yarn flow:precommit
+```

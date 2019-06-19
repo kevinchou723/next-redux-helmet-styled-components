@@ -1,3 +1,5 @@
+// @flow
+
 import {
   SET_EXAMPLE_TEXT,
 } from '../action-types/example-action-types';
@@ -6,7 +8,7 @@ const initialState = {
   text: 'I am initial example text',
 };
 
-export default (state = initialState, action) => {
+export default (state: Object = initialState, action: Object) => {
   const { type, payload } = action;
 
   switch (type) {
