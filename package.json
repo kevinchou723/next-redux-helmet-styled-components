@@ -7,18 +7,17 @@
     "url": "https://bighuman.com"
   },
   "scripts": {
-    "dev": "next",
+    "start": "next",
     "build": "next build",
-    "start": "next start",
+    "prod": "next start",
     "lint:precommit": "eslint ./",
     "flow:precommit": "glow",
     "flow": "flow"
   },
   "dependencies": {
-    "babel-plugin-inline-react-svg": "^1.1.0",
-    "next": "latest",
+    "next": "8.1.0",
     "next-images": "1.0.1",
-    "next-redux-wrapper": "latest",
+    "next-redux-wrapper": "2.1.0",
     "next-routes": "1.4.2",
     "polished": "^3.4.1",
     "react": "16.8",
@@ -33,6 +32,7 @@
   "license": "ISC",
   "devDependencies": {
     "babel-eslint": "10.0.1",
+    "babel-plugin-inline-react-svg": "^1.1.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "eslint": "5.9.0",
     "eslint-config-airbnb": "17.1.0",

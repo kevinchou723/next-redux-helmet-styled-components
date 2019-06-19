@@ -1,3 +1,5 @@
+// @flow
+
 /* PAGES */
 const INDEX_PAGE = '/';
 

@@ -34,6 +34,7 @@ class Index extends PureComponent<Props> {
     if (req) {
       Helmet.renderStatic();
     }
+
     return {
       isServer,
       title: 'Hello World!',

@@ -1,3 +1,5 @@
+// @flow
+
 export const typography = {
   fontFamily: 'Roboto',
   fontSize: {
