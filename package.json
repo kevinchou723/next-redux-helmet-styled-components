@@ -1,0 +1,54 @@
+{
+  "name": "nextjs-helmet-styled-component",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint:precommit": "eslint ./",
+    "flow:precommit": "glow",
+    "flow": "flow"
+  },
+  "dependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.0",
+    "next": "latest",
+    "next-images": "1.0.1",
+    "next-redux-wrapper": "latest",
+    "next-routes": "1.4.2",
+    "polished": "^3.4.1",
+    "react": "16.8",
+    "react-dom": "16.8",
+    "react-helmet": "5.2.0",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "redux-batch-middleware": "0.2.0",
+    "redux-thunk": "2.2.0",
+    "styled-components": "^4.3.1"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "eslint": "5.9.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-flowtype": "^3.10.3",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.11.1",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.102.0-rc",
+    "glow": "^1.2.2",
+    "pre-commit": "^1.2.2",
+    "redux-devtools-extension": "2.13.5"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "pre-commit": [
+    "lint:precommit",
+    "flow:precommit"
+  ]
+}
