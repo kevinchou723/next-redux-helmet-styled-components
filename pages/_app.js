@@ -19,13 +19,13 @@ class Application extends App {
   render() {
     const { Component, pageProps, store } = this.props;
     return (
-      <Container>
-        <Provider store={store}>
-          <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
+        <Container>
+          <Provider store={store}>
             <Component {...pageProps} />
-          </ThemeProvider>
-        </Provider>
-      </Container>
+          </Provider>
+        </Container>
+      </ThemeProvider>
     );
   }
 }

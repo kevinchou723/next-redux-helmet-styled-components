@@ -36,10 +36,19 @@ const fullWidthMobileOnly = css`
   margin: 0 ${-(mobilePadding)}px;
 `;
 
+const absoluteCenter = css`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+
 export const layout = {
   contentContainer,
   fullWidthSection,
   fullWidthMobileOnly,
   setSpacing,
   baseSpacing,
+  absoluteCenter,
 };

@@ -5,6 +5,7 @@ import { media } from './media-queries';
 import { typography } from './typography';
 import { layout } from './layout';
 import { utils } from './utils';
+import { resets } from './resets';
 
 const appTheme = {
   ...typography,
@@ -12,7 +13,8 @@ const appTheme = {
   colors: { ...colors },
   utils: { ...utils },
   media,
+  resets,
 };
 
-export { media };
+export { media, resets };
 export default appTheme;

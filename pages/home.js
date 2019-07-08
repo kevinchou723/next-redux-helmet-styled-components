@@ -3,7 +3,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { withRouter } from 'next/router';
-import CloseSvg from '../assets/images/close.svg';
 
 type Props = {
   title?: string,
@@ -34,10 +33,6 @@ class Home extends React.Component<Props> {
           title={title}
           meta={meta}
         />
-        <div className='home__close-icon-wrapper'>
-          <CloseSvg />
-          {'<-- I\'m a SVG'}
-        </div>
         This is Home page! I am Green!
       </div>
     );

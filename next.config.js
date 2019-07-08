@@ -1,9 +1,10 @@
 const withImages = require('next-images');
+const withCSS = require('@zeit/next-css');
 
-module.exports = withImages({
+module.exports = withCSS(withImages({
   webpack(config) {
     config.module.rules.push({
-      test: /\.(png|svg|eot|otf|ttf|woff|woff2)$/,
+      test: /\.(png|svg|jpg|gif|eot|otf|ttf|woff|woff2)$/,
       use: {
         loader: 'url-loader',
         options: {
@@ -17,4 +18,4 @@ module.exports = withImages({
 
     return config;
   },
-});
+}));

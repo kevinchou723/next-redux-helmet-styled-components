@@ -2,6 +2,7 @@ import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import Helmet from 'react-helmet';
 import { ServerStyleSheet } from 'styled-components';
+import { GlobalStyle } from '../theme/global';
 
 export default class extends Document {
   static async getInitialProps(ctx) {
@@ -71,6 +72,7 @@ export default class extends Document {
           { this.helmetHeadComponents }
         </Head>
         <body {...this.helmetBodyAttrComponents}>
+          <GlobalStyle />
           <Main />
           <NextScript />
         </body>
